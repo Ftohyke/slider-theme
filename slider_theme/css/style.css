@@ -47,7 +47,7 @@ ul.links {
 /* Top */
 
 .header-menu { /* Should utilize sticky positioning */
-  position: fixed;
+  /*position: fixed;*/
   /*margin-top: 3em;*/
 }
 .header-cover-interlayer { /* Should utilize sticky positioning */
@@ -73,18 +73,43 @@ ul.links {
   z-index: 8;
   /*margin-top: 3em;*/
 }
+
+/* stackoverflow.com/a/17807271                                            *
+ * You can use margin for .wrap container instead of padding for .wrapper: */
+body {
+  height:20000px;
+  margin: 0;
+  padding: 0;
+  background-color:#ccc; 
+}
+.wrapper {
+  padding: 0%;
+}
+.wrap {
+  float: left;
+  position: relative;
+  margin: 0;
+  width: 100%; 
+}
+.fixedwrap {
+  position:fixed;
+  width:inherit;
+  padding:0px; 
+  height:100px;
+}
+
 .stripe .overbox {
-  width: 100%;
+  /*width: 100%;*/
 }
 .stripe {
   margin-top: 7em;
   position: relative;
   z-index: 9;
+  height: 6em;
   background: #fff;
 }
 .overbox {
   position: absolute;
-  padding: 40px 40px 0 0;
   top: -2em;
 }
 .overbox-area {

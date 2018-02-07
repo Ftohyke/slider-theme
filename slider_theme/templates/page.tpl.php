@@ -2,45 +2,49 @@
 <div id="page-wrapper">
   <div id="page">
 
-  <div id="header" class="header-menu">
-    <div class="section clearfix">
-	  <div class="stripe">
-        <div class="overbox">
-          <div class="overbox-area">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Cover Page'); ?>" rel="home" id="logo" style="logotype">
-              <img src="<?php print $logo; ?>" alt="<?php print t('SITE NAME'); ?>" />
-            </a>
-            <div class="main-menu">
-              <?php
-                print theme (
-                  'links',
-                  array (
-                    'links' => $main_menu,
-                    'attributes' => array (
-                      'id' => 'main-menu-links',
-                      'class' => array ('links', 'clearfix'),
-                    ),
-                    'heading' => array (
-                      'text' => t('Navigation'),
-                      'level' => 'h2',
-                      'class' => array('element-invisible'),
-                    ),
-                  )
-                );
-              ?>
+  <div id="header-wrapper" class="wrapper">
+    <div id="header-wrap" class="wrap">
+      <div id="header" class="header-menu fixedwrap">
+        <div class="section clearfix">
+          <div class="stripe">
+            <div class="overbox">
+              <div class="overbox-area">
+                <a href="<?php print $front_page; ?>" title="<?php print t('Cover Page'); ?>" rel="home" id="logo" style="logotype">
+                  <img src="<?php print $logo; ?>" alt="<?php print t('SITE NAME'); ?>" />
+                </a>
+                <div class="main-menu">
+                  <?php
+                    print theme (
+                      'links',
+                      array (
+                        'links' => $main_menu,
+                        'attributes' => array (
+                          'id' => 'main-menu-links',
+                          'class' => array ('links', 'clearfix'),
+                        ),
+                        'heading' => array (
+                          'text' => t('Navigation'),
+                          'level' => 'h2',
+                          'class' => array('element-invisible'),
+                        ),
+                      )
+                    );
+                  ?>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="header-cover-interlayer bg-filled"></div>
+
+          <!-- < ? php print render($page['header']); ? > -->
+
         </div>
-      </div>
 
-    <div class="header-cover-interlayer bg-filled"></div>
+      </div> <!-- /.section, /#header -->
 
-    <!-- < ? php print render($page['header']); ? > -->
-
-
-
-
-  </div></div> <!-- /.section, /#header -->
+    </div> <!-- wrap -->
+  </div> <!-- wrapper -->
   
   <?php if ($site_name || $site_slogan): ?>
   <div id="sub-header" class="header-cover">
@@ -60,8 +64,11 @@
   </div>
   <?php endif; ?>
 
+a
+aaaaaaa
 
 
-  </div></div> <!-- /.section, /#footer-wrapper -->
+aaaaaaa
+
 
 </div></div> <!-- /#page, /#page-wrapper -->
